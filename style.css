@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.body-wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(240, 205, 205);
+}
+
+.content-wrapper {
+  width: 100%;
+  height: 83%;
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3%;
+}
+
+.image-transition-wrapper {
+  width: 30%;
+  height: 80%;
+  background-color: midnightblue;
+}
+
+.user-access-wrapper {
+  width: 30%;
+  height: 80%;
+  background-color: indianred;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5%;
+}
+
+.login-options-wrapper {
+  width: 100;
+  height: 68%;
+  background-color: darkorchid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logo-wrapper {
+  height: 25%;
+  width: 80%;
+  background-color: darkgoldenrod;
+  margin-bottom: 2%;
+  box-sizing: border-box;
+}
+
+.login-credentials-wrapper {
+  height: 35%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  background-color: lightgreen;
+  box-sizing: border-box;
+}
+
+.sign-up-wrapper {
+  height: 13%;
+  width: 100%;
+  background-color: darkkhaki;
+}
+
+.app-wrapper {
+  height: 19%;
+  width: 100%;
+  background-color: tomato;
+}
