@@ -147,10 +147,7 @@ body {
   background-color: transparent;
   color: #385185;
   font-weight: 700;
-}
-
-.facebook-option:hover {
-  cursor: pointer;
+  text-decoration: none;
 }
 
 .facebook-logo {
@@ -167,10 +164,7 @@ body {
   border: none;
   background-color: transparent;
   color: #00376b;
-}
-
-.password-recovery:hover {
-  cursor: pointer;
+  text-decoration: none;
 }
 
 .sign-up-wrapper {
@@ -184,17 +178,15 @@ body {
   align-items: center;
   box-sizing: border-box;
   color: #262626;
+  gap: 1%;
 }
 
-.sign-up-button {
+.sign-up-redirect {
   background-color: transparent;
   border: none;
   color: #0095f6;
-  font-weight: 700;
-}
-
-.sign-up-button:hover {
-  cursor: pointer;
+  /* font-weight: 700; */
+  text-decoration: none;
 }
 
 .app-options-wrapper {
@@ -218,18 +210,16 @@ body {
   /* justify-content: flex-end; */
 }
 
-.app-download-button {
+.app-download-redirect {
   width: 45%;
   height: 100%;
-  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   box-sizing: border-box;
   background-color: transparent;
   /* background-color: #00376b; */
   padding: 0;
-}
-
-.app-download-button:hover {
-  cursor: pointer;
 }
 
 .app-download-images {
