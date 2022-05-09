@@ -1,4 +1,4 @@
 # Pagina-Inicial-Instagram
-Recriando a página inicial do instagram (com alterações)
+Recriando a página inicial do instagram (com modificações)
 
 .
