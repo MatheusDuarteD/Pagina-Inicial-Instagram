@@ -18,13 +18,21 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 3%;
+  gap: 4%;
 }
 
-.image-transition-wrapper {
+.phone-layout-wrapper {
   width: 27.5%;
   height: 80%;
-  background-color: midnightblue;
+  /* background-color: midnightblue; */
+  position: relative;
+  z-index: 1000;
+}
+
+.phone-layout-img {
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
 }
 
 .user-access-wrapper {
@@ -34,6 +42,29 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1.5%;
+}
+
+.image-transition-wrapper {
+  display: flex;
+  position: absolute;
+  background-color: black;
+  border-radius: 60px;
+  height: 98%;
+  width: 96%;
+  top: 1%;
+  left: 2%;
+  z-index: -1;
+}
+
+.sample-image {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 60px;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 2s ease-in-out;
 }
 
 .login-options-wrapper {
@@ -83,7 +114,7 @@ body {
   flex-direction: column;
   width: 100%;
   height: 100%;
-  gap: 2%;
+  gap: 3%;
 
   /* padding: 0px; */
 }
@@ -99,8 +130,8 @@ body {
 
 .login-submit-button {
   margin-top: 3%;
-  height: 25%;
-  border-radius: 5px;
+  height: 23%;
+  border-radius: 3px;
   border: none;
   background-color: #b2dffc;
   color: #fffffe;
@@ -230,4 +261,9 @@ body {
 
 .get-the-app-text {
   color: #262626;
+}
+
+.no-visibility {
+  opacity: 0;
+  visibility: hidden !important;
 }

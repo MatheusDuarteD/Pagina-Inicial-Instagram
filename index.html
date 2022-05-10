@@ -10,23 +10,51 @@
   <body>
     <div class="body-wrapper">
       <div class="content-wrapper">
-        <div class="image-transition-wrapper"></div>
+        <div class="phone-layout-wrapper">
+          <img
+            class="phone-layout-img"
+            src="./assets/imgs/blank-phone-screen-layout.png"
+            alt="Celular com tela mostrando imagens"
+          />
+          <div class="image-transition-wrapper">
+            <img
+              class="sample-image"
+              id="sample-image-1"
+              src="./assets/imgs/sample-img-1.jpg"
+              alt="paisagem"
+            />
+            <img
+              class="sample-image no-visibility"
+              id="sample-image-2"
+              src="./assets/imgs/sample-img-2.jpg"
+              alt=""
+            />
+            <img
+              class="sample-image no-visibility"
+              id="sample-image-3"
+              src="./assets/imgs/sample-img-3.jpg"
+              alt=""
+            />
+          </div>
+        </div>
         <div class="user-access-wrapper">
           <div class="login-options-wrapper">
             <div class="logo-wrapper">
-              <img src="./assets/imgs/logo.png" alt="texto escrito instagram" />
+              <img src="./assets/imgs/logo.png" alt="logomarca do instagram" />
             </div>
             <div class="login-credentials-wrapper">
               <form class="login-form" action="#" method="post">
                 <input
                   class="login-input username-field"
                   type="text"
+                  aria-label="e-mail do usuário"
                   placeholder="Telefone, nome de usuário ou email"
                   name="username"
                 />
                 <input
                   class="login-input password-field"
                   type="password"
+                  aria-label="senha do usuário"
                   placeholder="Senha"
                   name="password"
                 />
@@ -75,5 +103,6 @@
       </div>
       <footer class="footer"></footer>
     </div>
+    <script src="./index.js"></script>
   </body>
 </html>
