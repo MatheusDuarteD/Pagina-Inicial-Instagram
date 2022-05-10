@@ -1,20 +1,30 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  /* overflow: scroll; */
 }
 
 .body-wrapper {
   width: 100vw;
+  /* height: 100%; */
   height: 100vh;
   display: flex;
+  /* flex: 1; */
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   background-color: #fafafa;
+  /* min-height: 100vh; */
 }
 
 .content-wrapper {
-  width: 100%;
-  height: 83%;
+  /* width: 100%;
+  height: 100%; */
   /* background-color: lightblue; */
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,21 +39,14 @@ body {
   /* background-color: midnightblue; */
   position: relative;
   z-index: 1000;
+  min-width: 22rem;
+  min-height: 35.43rem;
 }
 
 .phone-layout-img {
   width: 100%;
   height: 100%;
   z-index: 1000;
-}
-
-.user-access-wrapper {
-  width: 27.5%;
-  height: 80%;
-  /* background-color: indianred; */
-  display: flex;
-  flex-direction: column;
-  gap: 1.5%;
 }
 
 .image-transition-wrapper {
@@ -67,6 +70,17 @@ body {
   visibility: visible;
   opacity: 1;
   transition: opacity 2s ease-in-out;
+}
+
+.user-access-wrapper {
+  width: 27.5%;
+  height: 80%;
+  /* background-color: indianred; */
+  display: flex;
+  flex-direction: column;
+  gap: 1.5%;
+  min-width: 22rem;
+  min-height: 35.43rem;
 }
 
 .login-options-wrapper {
@@ -137,6 +151,8 @@ body {
   border: none;
   background-color: #b2dffc;
   color: #fffffe;
+  font-weight: 700;
+  font-size: calc(10px + 6 * ((100vw - 300px) / 1620));
 }
 
 .separator {
@@ -144,6 +160,8 @@ body {
   text-align: center;
   margin-bottom: 4%;
   color: #8e8e8e;
+  font-size: calc(10px + 5 * ((100vw - 300px) / 1620));
+  font-weight: 600;
 }
 
 .separator::before {
@@ -179,8 +197,9 @@ body {
   border: none;
   background-color: transparent;
   color: #385185;
-  font-weight: 700;
+  font-weight: 600;
   text-decoration: none;
+  font-size: calc(10px + 7 * ((100vw - 300px) / 1620));
 }
 
 .facebook-logo {
@@ -198,6 +217,7 @@ body {
   background-color: transparent;
   color: #00376b;
   text-decoration: none;
+  font-size: calc(10px + 5 * ((100vw - 300px) / 1620));
 }
 
 .sign-up-wrapper {
@@ -212,6 +232,7 @@ body {
   box-sizing: border-box;
   color: #262626;
   gap: 1%;
+  font-size: calc(12px + 5 * ((100vw - 300px) / 1620));
 }
 
 .sign-up-redirect {
@@ -220,6 +241,7 @@ body {
   color: #0095f6;
   /* font-weight: 700; */
   text-decoration: none;
+  font-weight: 600;
 }
 
 .app-options-wrapper {
@@ -232,6 +254,7 @@ body {
   align-items: center;
   /* gap: 12%; */
   box-sizing: border-box;
+  font-size: calc(12px + 5 * ((100vw - 300px) / 1620));
 }
 
 .app-redirect-wrapper {
@@ -263,23 +286,26 @@ body {
 
 .footer {
   display: flex;
-  justify-content: center;
-  /* align-items: center; */
   flex-direction: column;
   flex-wrap: wrap;
-  height: 17%;
+  height: 20%;
   width: 100%;
   gap: 6%;
+  box-sizing: border-box;
+  padding: 3% 2% 0 2%;
 }
 
 .categories-wrapper {
   display: flex;
   justify-content: center;
+  /* align-content: space-evenly; */
   align-items: center;
   width: 100%;
-  height: 10%;
+  /* height: 10%; */
   gap: 1%;
-  font-size: 13px;
+  font-size: calc(12px + 3 * ((100vw - 300px) / 1620));
+  flex-wrap: wrap;
+  flex: 1;
 }
 
 .category {
@@ -295,3 +321,28 @@ body {
   opacity: 0;
   visibility: hidden !important;
 }
+
+@media only screen and (max-width: 800px) {
+  .phone-layout-wrapper {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .user-access-wrapper {
+    width: 100%;
+    height: 100%;
+    min-width: auto;
+  }
+  .app-download-images {
+    width: 85%;
+    height: 80%;
+  }
+}
+
+/* @media only screen and (max-height: 700px) {
+  .body-wrapper {
+    padding-top: 10%;
+    height: 150vh;
+  }
+} */
